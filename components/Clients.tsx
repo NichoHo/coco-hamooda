@@ -63,7 +63,7 @@ export default function ClientMap() {
               className="w-full h-full"
             >
               <ZoomableGroup
-                center={[20, 20]}
+                center={[20, 10]}
                 zoom={1.2}
                 minZoom={1.2}
                 maxZoom={1.2}
