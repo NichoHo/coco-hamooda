@@ -1,0 +1,38 @@
+Color System
+Primary Color: Tropical Blue #1E90FF — conveys trust, oceanic freshness, and tropical origins.
+Secondary Colors: 
+Charcoal Gray #2E2E2E — symbolic of the product, gives contrast and solidity.
+Warm Sand #F4D29A — natural, balancing, and brings warmth to the blue-gray palette.
+Accent Colors:
+Lime Green #9FD356 — represents sustainability and growth.
+Amber Glow #FFB347 — evokes fire and energy, ideal for call-to-action highlights.
+Neutral Colors:
+Role	Light Mode	Dark Mode
+Background	#F9FAFB	#0E1113
+Surface	#FFFFFF	#181A1B
+Text Primary	#111827	#F3F4F6
+Text Secondary	#6B7280	#9CA3AF
+Border	#E5E7EB	#2C2C2C
+
+Typography System
+Role	Tailwind Classes	Notes
+Display / Hero	font-poppins text-5xl md:text-6xl font-bold tracking-tight	Clean and modern
+Heading (H2)	font-poppins text-3xl font-semibold	Section headers
+Subheading (H3)	font-poppins text-xl font-medium text-blue-500	Optional tropical accent
+Body	font-inter text-base text-gray-600 dark:text-gray-300 leading-relaxed	Default paragraph
+Small / Caption	text-sm text-gray-500	Secondary info
+
+Spacing System
+Level	Tailwind Utility	Use
+Section Padding	py-24 md:py-32	Large vertical spacing
+Section Gap	gap-16	Between grid/flex items
+Component Padding	p-6 md:p-8	For cards or boxes
+Layout Max Width	max-w-7xl mx-auto px-6 md:px-12	Standard container width
+Spacing follows an 8px scale for visual rhythm.
+
+Responsive Rules
+Screen	Behavior
+<768px (Mobile)	Single-column layout, larger tap areas
+769–1080px (Tablet)	Two-column grids for Services & Clients
+>1280px (Desktop)	Max width max-w-6xl, full hero banner
+Tailwind handles this automatically with prefixes like md:, lg:, etc.
