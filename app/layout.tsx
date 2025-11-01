@@ -4,7 +4,7 @@ import Footer from '@/components/Footer'
 import "react-tooltip/dist/react-tooltip.css";
 
 export const metadata = {
-  title: 'Hammouda Charcoal Company | Global Supplier of Premium Natural Charcoal',
+  title: 'Coco Hamooda | Global Supplier of Premium Natural Charcoal',
   description: 'Crafting premium natural charcoal and delivering it worldwide since 1995.',
 }
 

@@ -35,7 +35,7 @@ export default function Contact() {
           <p className="font-inter text-sm text-gray-300 mb-2">Contact us directly</p>
           <a 
             href={`tel:${phoneNumber}`}
-            className="inline-flex items-center gap-3 font-poppins text-3xl md:text-4xl font-semibold text-white hover:text-primary transition-colors duration-300"
+            className="inline-flex items-center gap-3 font-inter text-3xl md:text-4xl font-semibold text-white hover:text-primary transition-colors duration-300"
           >
             <svg 
               className="w-8 h-8 md:w-10 md:h-10" 

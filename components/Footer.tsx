@@ -1,11 +1,13 @@
 'use client';
 
+import Link from 'next/link';
+
 export default function Footer() {
   const navLinks = [
-    { href: '#about', label: 'About' },
-    { href: '#services', label: 'Our Services' },
-    { href: '#process', label: 'Our Process' },
-    { href: '#contact', label: 'Contact' },
+    { href: '/', label: 'Home' },
+    { href: '/about', label: 'About' },
+    { href: '/clients', label: 'Clients' },
+    { href: '/contact', label: 'Contact' },
   ];
 
   const currentYear = new Date().getFullYear();
@@ -21,7 +23,7 @@ export default function Footer() {
               HAMMOUDA
             </h3>
             <p className="font-inter text-sm text-gray-400 leading-relaxed max-w-sm">
-              Crafting premium natural charcoal and delivering it worldwide since 1995. 
+              Crafting premium natural charcoal and delivering it worldwide since 1995.
               Sustainably sourced, expertly produced.
             </p>
           </div>
@@ -34,12 +36,12 @@ export default function Footer() {
             <ul className="space-y-2">
               {navLinks.map((link) => (
                 <li key={link.href}>
-                  <a
+                  <Link
                     href={link.href}
                     className="font-inter text-sm text-gray-400 hover:text-primary transition-colors duration-300 inline-block"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -88,7 +90,7 @@ export default function Footer() {
         <div className="pt-8 border-t border-gray-700">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="font-inter text-sm text-gray-500">
-              © {currentYear} Hammouda Charcoal Company. All rights reserved.
+              © {currentYear} Coco Hamooda. All rights reserved.
             </p>
             <p className="font-inter text-sm text-gray-500">
               Sustainably sourced since 1995

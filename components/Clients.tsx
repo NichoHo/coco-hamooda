@@ -35,7 +35,7 @@ export default function ClientMap() {
 
   return (
     <section className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 py-16 px-4">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto pt-12">
         {/* Header */}
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 dark:bg-blue-900/30 rounded-full mb-4">
@@ -48,7 +48,7 @@ export default function ClientMap() {
             Our Export Destinations
           </h1>
           <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
-            Hammouda Charcoal Company proudly exports to {clientLocations.length} countries worldwide.
+            Coco Hamooda proudly exports to {clientLocations.length} countries worldwide.
           </p>
         </div>
 
