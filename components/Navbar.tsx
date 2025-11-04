@@ -41,6 +41,7 @@ export default function Navbar() {
     { href: '/about', label: 'About' },
     { href: '/clients', label: 'Clients' },
     { href: '/contact', label: 'Contact' },
+    { href: '/gallery', label: 'Gallery' },
   ];
 
   const handleLinkClick = () => {

@@ -107,8 +107,10 @@ export default function ClientMap() {
                         r={activeMarker === location.name ? 8 : 6}
                         fill={
                           activeMarker === location.name || hoveredMarker === location.name
-                            ? "#1E90FF"
-                            : "#9FD356"
+                            ? "#1E90FF" // Blue when active/hovered
+                            : location.name === "Indonesia" || location.name === "Jordan"
+                              ? "#FF4444" 
+                              : "#9FD356" 
                         }
                         stroke="white"
                         strokeWidth={2}
@@ -117,7 +119,9 @@ export default function ClientMap() {
                           filter:
                             activeMarker === location.name
                               ? "drop-shadow(0 4px 12px rgba(30, 144, 255, 0.6))"
-                              : "drop-shadow(0 2px 6px rgba(159, 211, 86, 0.4))",
+                              : location.name === "Indonesia"
+                                ? "drop-shadow(0 2px 6px rgba(255, 68, 68, 0.4))"
+                                : "drop-shadow(0 2px 6px rgba(159, 211, 86, 0.4))",
                         }}
                       />
 
@@ -126,7 +130,9 @@ export default function ClientMap() {
                         <circle
                           r={12}
                           fill="none"
-                          stroke="#1E90FF"
+                          stroke={
+                            location.name === "Indonesia" ? "#FF4444" : "#1E90FF"
+                          }
                           strokeWidth={2}
                           opacity={0.4}
                           className="animate-ping"

@@ -2,6 +2,8 @@ import '../styles/global.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import "react-tooltip/dist/react-tooltip.css";
+import 'flag-icons/css/flag-icons.min.css';
+
 
 export const metadata = {
   title: 'Coco Hamooda | Global Supplier of Premium Natural Charcoal',
